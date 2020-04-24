@@ -4,11 +4,43 @@
              xmlns:controls="clr-namespace:LabelSize.Controls"
 
              >
-    <StackLayout BackgroundColor="Aqua">
+    <StackLayout>
+        <ScrollView VerticalOptions="FillAndExpand">
+    <StackLayout Margin="0,100,0,0" BackgroundColor="#D0E6F2">
+
+        <controls:XFrame  OpacityShadow=".7" SizeShadow="30" Margin="7" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BorderRadius="60" ShowOut="False" ShowInner="True" BaseColor="#BCD0DB" >
+                          <Label Margin="20,20" Text="Welcome to Xamarin.Forms!" FontSize="25"/>
+                 </controls:XFrame>
         
-        <Label WidthRequest="300" BackgroundColor="Yellow" Text="Welcome to Xamarin.Forms!" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 
-        <controls:LabelFitSize Text="HELLO" Bold="True" TextColor="Red" BackgroundColor="Pink" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  />
+        <controls:XFrame OpacityShadow=".7" Margin="7" SizeShadow="40" BorderRadius="20" ShowOut="False" BaseColor="#BCD0DB" WidthRequest="200" VerticalOptions="FillAndExpand">
+            <StackLayout Margin="20">
 
+
+                
+
+                <controls:XFrame OpacityShadow="1" SizeShadow="30" Margin="0" VerticalOptions="Center" HorizontalOptions="Center" BorderRadius="60" ShowOut="True" ShowInner="False" BaseColor="#BCD0DB" HeightRequest="100" WidthRequest="100">
+                           <Image HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="30" WidthRequest="30" Source="bing.png"/>
+                 </controls:XFrame>
+
+                <controls:XFrame  OpacityShadow="1" SizeShadow="20" Margin="50" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" BorderRadius="20" ShowOut="True" ShowInner="False" BaseColor="#BCD0DB" >
+                           <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                               <Label Text="Welcome to Xamarin.Forms!" />
+                <Label Text="Welcome to Xamarin.Forms!" />
+                <Label Text="Welcome to Xamarin.Forms!" />
+                           </StackLayout>
+                 </controls:XFrame>
+               
+
+            </StackLayout>
+        </controls:XFrame>
+
+
+        <controls:XFrame OpacityShadow="1" SizeShadow="20" Margin="0,0,0,40" BorderRadius="20" ShowOut="True" BaseColor="#84A0B8" WidthRequest="200" HeightRequest="80" VerticalOptions="End" >
+               <Label TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Text="BUTTON" FontSize="18"/>
+        </controls:XFrame>
+        
+        </StackLayout>
+            </ScrollView>
     </StackLayout>
 </ContentPage>

@@ -133,4 +133,7 @@
       <Name>LabelSize</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bing.png" />
+  </ItemGroup>
 </Project>
